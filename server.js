@@ -14,6 +14,10 @@ mongoose.connect("mongodb+srv://sathushan622:yj9G8A6daFxzY5F1@cluster0.2ydqcvl.m
 
 app.use("/api/users", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the User API");
+});
+
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 //hrghrgh
