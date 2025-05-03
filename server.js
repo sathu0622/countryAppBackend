@@ -6,8 +6,7 @@ const userRoutes = require("./routes/userRoutes");
 const app = express();
 app.use(cors({
   origin: '*', // Or specify your frontend origin explicitly like 'http://localhost:5173'
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
 
 app.use(express.json());
